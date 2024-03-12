@@ -2,7 +2,7 @@ pandoc: 3.1.11
 pkgdown: 2.0.7
 pkgdown_sha: ~
 articles: {}
-last_built: 2024-03-11T16:20Z
+last_built: 2024-03-12T13:54Z
 urls:
   reference: https://scotgovanalysis.github.io/objectiveR/reference
   article: https://scotgovanalysis.github.io/objectiveR/articles

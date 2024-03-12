@@ -16,10 +16,16 @@
     <loc>https://scotgovanalysis.github.io/objectiveR/index.html</loc>
   </url>
   <url>
+    <loc>https://scotgovanalysis.github.io/objectiveR/reference/allow_bypass_2fa.html</loc>
+  </url>
+  <url>
     <loc>https://scotgovanalysis.github.io/objectiveR/reference/check_valid.html</loc>
   </url>
   <url>
     <loc>https://scotgovanalysis.github.io/objectiveR/reference/create_folder.html</loc>
+  </url>
+  <url>
+    <loc>https://scotgovanalysis.github.io/objectiveR/reference/error.html</loc>
   </url>
   <url>
     <loc>https://scotgovanalysis.github.io/objectiveR/reference/index.html</loc>
@@ -35,6 +41,12 @@
   </url>
   <url>
     <loc>https://scotgovanalysis.github.io/objectiveR/reference/objectiveR_auth.html</loc>
+  </url>
+  <url>
+    <loc>https://scotgovanalysis.github.io/objectiveR/reference/participant_bypass_2fa.html</loc>
+  </url>
+  <url>
+    <loc>https://scotgovanalysis.github.io/objectiveR/reference/participants.html</loc>
   </url>
   <url>
     <loc>https://scotgovanalysis.github.io/objectiveR/reference/store_token.html</loc>
