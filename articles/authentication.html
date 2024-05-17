@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="objectiveR">
-<title>Frequently Asked Questions • objectiveR</title>
+<title>Authentication • objectiveR</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png">
@@ -19,7 +19,7 @@
 <!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js" integrity="sha512-7O5pXpc0oCRrxk8RUfDYFgn0nO1t+jLuIOQdOMRp4APB7uZ4vSjspzp5y6YDtDs4VzUSTbWzBFZ/LKJhnyFOKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><link href="../extra.css" rel="stylesheet">
-<meta property="og:title" content="Frequently Asked Questions">
+<meta property="og:title" content="Authentication">
 <meta property="og:description" content="objectiveR">
 <meta property="og:image" content="https://scotgovanalysis.github.io/objectiveR/logo.svg">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
@@ -81,45 +81,88 @@
 
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
-      <img src="../logo.svg" class="logo" alt=""><h1>Frequently Asked Questions</h1>
+      <img src="../logo.svg" class="logo" alt=""><h1>Authentication</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/ScotGovAnalysis/objectiveR/blob/HEAD/vignettes/faqs.Rmd" class="external-link"><code>vignettes/faqs.Rmd</code></a></small>
-      <div class="d-none name"><code>faqs.Rmd</code></div>
+      <small class="dont-index">Source: <a href="https://github.com/ScotGovAnalysis/objectiveR/blob/HEAD/vignettes/authentication.Rmd" class="external-link"><code>vignettes/authentication.Rmd</code></a></small>
+      <div class="d-none name"><code>authentication.Rmd</code></div>
     </div>
 
     
     
 <div class="section level2">
-<h2 id="what-is-the-difference-between-users-and-participants">What is the difference between users and participants?<a class="anchor" aria-label="anchor" href="#what-is-the-difference-between-users-and-participants"></a>
+<h2 id="how-authentication-works">How authentication works<a class="anchor" aria-label="anchor" href="#how-authentication-works"></a>
 </h2>
-<p>A user is an individual using Objective Connect. A participant is a
-user in a particular workspace. For example, a person using Objective
-Connect will have a User UUID associated with them, and also a
-Participant UUID for each individual workspace they are a member of.</p>
-<p>A user can get their User UUID by running <code><a href="../reference/my_user_id.html">my_user_id()</a></code>.
-A user can find their participant UUID for a particular workspace using
-<code><a href="../reference/participants.html">participants()</a></code>.</p>
+<p>The first time you send a request, the API requires your Objective
+Connect user email address and password to authenticate.</p>
+<p>Each successful response from the API includes a token. This token
+can then be used to authenticate subsequent requests in your session,
+negating the need to repeatedly supply your email address and
+password.</p>
+<p>The rest of this article details how to manage authentication when
+using the <code>objectiveR</code> package.</p>
 </div>
 <div class="section level2">
-<h2 id="how-does-two-factor-authentication-2fa-work">How does two factor authentication (2FA) work?<a class="anchor" aria-label="anchor" href="#how-does-two-factor-authentication-2fa-work"></a>
+<h2 id="first-request">First request<a class="anchor" aria-label="anchor" href="#first-request"></a>
 </h2>
-<p>(Note: this is sometimes also referred to as ‘two step
-verification’.)</p>
-<p>Where workspaces have 2FA enabled, users cannot use the API unless
-they have been given permission to bypass this. Permission to bypass 2FA
-is given at a workspace level, and can only be granted by the workspace
-owner.</p>
-<p>Firstly, permission must be given at a workgroup level to allow
-bypassing permissions to be granted for workspaces within it. This can
-be done using <code><a href="../reference/allow_bypass_2fa.html">allow_bypass_2fa()</a></code>.</p>
-<p>Once this has been allowed, bypassing can be granted for individual
-participants in a workspace using
-<code><a href="../reference/participant_bypass_2fa.html">participant_bypass_2fa()</a></code>.</p>
-<p>Both of these functions also allow for bypassing to be disallowed
-using <code>allow_bypass = FALSE</code>.</p>
-<p>To check the status of bypassing 2FA for participants in a workspace,
-use <code><a href="../reference/participants.html">participants()</a></code>.</p>
+<p>You will need your Objective Connect user email address and password
+to make a first request to the API. These can be provided in two
+ways.</p>
+<div class="section level3">
+<h3 id="r-environment-variables">R Environment variables<a class="anchor" aria-label="anchor" href="#r-environment-variables"></a>
+</h3>
+<p>Add two variables to your <code>.Renviron</code> file to define your
+email address and password.</p>
+<ul>
+<li>
+<p>Open your <code>.Renviron</code> file to edit:</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu">edit_r_environ</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+</li>
+<li>
+<p>Add two variables as follows:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">OBJECTIVER_USR</span> <span class="op">=</span> <span class="st">"XXX"</span></span>
+<span><span class="va">OBJECTIVER_PWD</span> <span class="op">=</span> <span class="st">"XXX"</span></span></code></pre></div>
+</li>
+<li><p>Save and close the <code>.Renviron</code> file.</p></li>
+<li>
+<p>To check this has worked as expected, first restart your R
+session then:</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Sys.getenv.html" class="external-link">Sys.getenv</a></span><span class="op">(</span><span class="st">"OBJECTIVER_USR"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/Sys.getenv.html" class="external-link">Sys.getenv</a></span><span class="op">(</span><span class="st">"OBJECTIVER_PWD"</span><span class="op">)</span></span></code></pre></div>
+<p>Your credentials should be printed in the console.</p>
+<p>Note: For this reason, it is important not to save your R session
+workspace on close as your console may contain your Objective Connect
+credentials.</p>
+</li>
+</ul>
+<p>The benefit of this method is that you can leave this information in
+your <code>.Renviron</code> file and <code>objectiveR</code> will
+automatically find them here each time you use the package.</p>
+</div>
+<div class="section level3">
+<h3 id="supply-credentials-when-prompted">Supply credentials when prompted<a class="anchor" aria-label="anchor" href="#supply-credentials-when-prompted"></a>
+</h3>
+<p>If you don’t have these variables defined in your
+<code>.Renviron</code> file, <code>objectiveR</code> will prompt you to
+supply them if you’re working in an interactive session.</p>
+<p><br></p>
+<p><img src="auth_prompt.png" alt="A small pop-up window with prompt 'Enter email registered with Objective Connect' followed by a text input box and buttons to select 'OK' or 'Cancel'." style="display: block; margin: auto;"></p>
+</div>
+</div>
+<div class="section level2">
+<h2 id="subsequent-requests">Subsequent requests<a class="anchor" aria-label="anchor" href="#subsequent-requests"></a>
+</h2>
+<p>Each successful API response includes a token that can be used for
+subsequent requests. <code>objectiveR</code> functions automatically
+parse this token from the API response and store it in your R session’s
+global environment.</p>
+<p>Where this object exists, <code>objectiveR</code> will automatically
+use it to authenticate subsequent requests.</p>
+<p>If this object doesn’t exist, <code>objectiveR</code> will resort to
+using your username and password, as it did for your <a href="#first-request">first request</a>.</p>
 </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
     </nav></aside>
