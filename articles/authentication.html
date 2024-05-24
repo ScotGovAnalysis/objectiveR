@@ -120,7 +120,8 @@ email address and password.</p>
 <code class="sourceCode R"><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu">edit_r_environ</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 </li>
 <li>
-<p>Add two variables as follows:</p>
+<p>Add two variables as follows (replacing <code>XXX</code> with
+your credentials):</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">OBJECTIVER_USR</span> <span class="op">=</span> <span class="st">"XXX"</span></span>
 <span><span class="va">OBJECTIVER_PWD</span> <span class="op">=</span> <span class="st">"XXX"</span></span></code></pre></div>
@@ -128,14 +129,13 @@ email address and password.</p>
 <li><p>Save and close the <code>.Renviron</code> file.</p></li>
 <li>
 <p>To check this has worked as expected, first restart your R
-session then:</p>
+session then run:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Sys.getenv.html" class="external-link">Sys.getenv</a></span><span class="op">(</span><span class="st">"OBJECTIVER_USR"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/Sys.getenv.html" class="external-link">Sys.getenv</a></span><span class="op">(</span><span class="st">"OBJECTIVER_PWD"</span><span class="op">)</span></span></code></pre></div>
 <p>Your credentials should be printed in the console.</p>
-<p>Note: For this reason, it is important not to save your R session
-workspace on close as your console may contain your Objective Connect
-credentials.</p>
+<p>Note: It is important not to save your R session workspace on close
+as your console may contain your Objective Connect credentials.</p>
 </li>
 </ul>
 <p>The benefit of this method is that you can leave this information in

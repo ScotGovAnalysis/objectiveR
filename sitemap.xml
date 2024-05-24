@@ -49,10 +49,7 @@
     <loc>https://scotgovanalysis.github.io/objectiveR/reference/my_workspaces.html</loc>
   </url>
   <url>
-    <loc>https://scotgovanalysis.github.io/objectiveR/reference/new_document.html</loc>
-  </url>
-  <url>
-    <loc>https://scotgovanalysis.github.io/objectiveR/reference/new_document_version.html</loc>
+    <loc>https://scotgovanalysis.github.io/objectiveR/reference/new_version.html</loc>
   </url>
   <url>
     <loc>https://scotgovanalysis.github.io/objectiveR/reference/objectiveR.html</loc>
@@ -65,6 +62,9 @@
   </url>
   <url>
     <loc>https://scotgovanalysis.github.io/objectiveR/reference/participants.html</loc>
+  </url>
+  <url>
+    <loc>https://scotgovanalysis.github.io/objectiveR/reference/upload_file.html</loc>
   </url>
   <url>
     <loc>https://scotgovanalysis.github.io/objectiveR/reference/workspace_assets.html</loc>

@@ -163,9 +163,9 @@ frame of assets in the workspace:</p>
 <p>This returns a data frame with a row for each asset in the workspace.
 Among other things, there will be a column containing the asset name and
 another containing the asset UUID.</p>
-<pre><code><span><span class="co">##                                      uuid   name</span></span>
-<span><span class="co">## 1 2j47-ff38-lcgg-mnis-3vq8-9536-9jfp-oy44 asset1</span></span>
-<span><span class="co">## 2 l588-e8wp-d6y8-3d01-blby-wag1-ks1s-gmo9 asset2</span></span></code></pre>
+<pre><code><span><span class="co">##   asset_name                              asset_uuid</span></span>
+<span><span class="co">## 1     asset1 2j47-ff38-lcgg-mnis-3vq8-9536-9jfp-oy44</span></span>
+<span><span class="co">## 2     asset2 l588-e8wp-d6y8-3d01-blby-wag1-ks1s-gmo9</span></span></code></pre>
 </div>
 <div class="section level2">
 <h2 id="download-file">Download file<a class="anchor" aria-label="anchor" href="#download-file"></a>
@@ -186,8 +186,8 @@ the location of the file:</p>
 <p>To upload a file to a workspace, use the UUID of the workspace and
 the file path of the file to upload:</p>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="../reference/new_document.html">new_document</a></span><span class="op">(</span><span class="fu">here</span><span class="fu">::</span><span class="fu">here</span><span class="op">(</span><span class="st">"data"</span>, <span class="st">"file2.csv"</span><span class="op">)</span>,</span>
-<span>             workspace_uuid <span class="op">=</span> <span class="st">"84op-9qdu-c692-t4z1-wa4z-h9k3-8454-i71f"</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/upload_file.html">upload_file</a></span><span class="op">(</span><span class="fu">here</span><span class="fu">::</span><span class="fu">here</span><span class="op">(</span><span class="st">"data"</span>, <span class="st">"file2.csv"</span><span class="op">)</span>,</span>
+<span>            workspace_uuid <span class="op">=</span> <span class="st">"84op-9qdu-c692-t4z1-wa4z-h9k3-8454-i71f"</span><span class="op">)</span></span></code></pre></div>
 <p>This function doesn’t return anything but will display a message in
 the R console to indicate the upload has been a success and to confirm
 the name of the file.</p>
@@ -197,10 +197,10 @@ assets, you should see an additional row for the file you’ve just
 uploaded.</p>
 <div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">assets</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/workspace_assets.html">workspace_assets</a></span><span class="op">(</span><span class="st">"84op-9qdu-c692-t4z1-wa4z-h9k3-8454-i71f"</span><span class="op">)</span></span></code></pre></div>
-<pre><code><span><span class="co">##                                      uuid    name</span></span>
-<span><span class="co">## 1 2j47-ff38-lcgg-mnis-3vq8-9536-9jfp-oy44 Asset 1</span></span>
-<span><span class="co">## 2 l588-e8wp-d6y8-3d01-blby-wag1-ks1s-gmo9 Asset 2</span></span>
-<span><span class="co">## 3 9tp8-3vme-d381-7o89-4qns-qw99-310b-3d06   file2</span></span></code></pre>
+<pre><code><span><span class="co">##   asset_name                              asset_uuid</span></span>
+<span><span class="co">## 1    Asset 1 2j47-ff38-lcgg-mnis-3vq8-9536-9jfp-oy44</span></span>
+<span><span class="co">## 2    Asset 2 l588-e8wp-d6y8-3d01-blby-wag1-ks1s-gmo9</span></span>
+<span><span class="co">## 3      file2 9tp8-3vme-d381-7o89-4qns-qw99-310b-3d06</span></span></code></pre>
 </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
     </nav></aside>
